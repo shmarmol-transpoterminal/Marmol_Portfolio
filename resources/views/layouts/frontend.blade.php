@@ -109,7 +109,7 @@
                         </a>
                     </div>
                     <p>
-                    {{ $settings['footer_text'] ?? 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' }}
+                    {{ $settings['footer_text'] ?? 'Senior UI Prototype Designer specializing in high-fidelity interactive experiences that bridge the gap between design and development.' }}
                     </p>
                 </div>
                 <div class="column lg-2 md-4 stack-on-900 s-footer__social-block">

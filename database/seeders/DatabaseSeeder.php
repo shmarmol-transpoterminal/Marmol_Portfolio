@@ -41,6 +41,7 @@ class DatabaseSeeder extends Seeder
             ['key' => 'contact_cta_text', 'value' => "I am always looking for new challenges and exciting projects to collaborate on. Whether you are looking to build a high-fidelity prototype from scratch, refine an existing user interface, or just want to chat about the latest in design technology, my inbox is always open. Let’s turn your vision into an interactive reality."],
             ['key' => 'contact_email', 'value' => "hello@shielamae.com"],
             ['key' => 'contact_phone', 'value' => "+63 900 000 0000"],
+            ['key' => 'footer_text', 'value' => "Senior UI Prototype Designer specializing in high-fidelity interactive experiences that bridge the gap between design and development."],
         ];
 
         foreach ($settings as $setting) {
