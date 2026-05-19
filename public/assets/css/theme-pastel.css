@@ -1,0 +1,420 @@
+/* ===================================================================
+ * Monica Theme Override - Soft Pastel/Baby Pink
+ * ------------------------------------------------------------------ */
+
+:root {
+    /* Soft Pastel/Baby Pink Palette */
+    --color-1: #FFC0CB; /* Baby Pink */
+    --color-1-light: #FFD1DC;
+    --color-1-lighter: #FFE4E1; /* Misty Rose */
+    --color-1-dark: #FFB6C1; /* Light Pink */
+    
+    --color-2: #4A4A4A; /* Professional Dark Grey instead of harsh black */
+    --color-3: #FFF5F7; /* Extremely light pinkish white for backgrounds */
+
+    --color-text: #555555;
+    --color-text-dark: #333333;
+    
+    /* Gradients */
+    --gradient-pink: linear-gradient(135deg, #FFC0CB 0%, #FFE4E1 100%);
+    --gradient-soft: linear-gradient(135deg, #FFF5F7 0%, #FFFFFF 100%);
+    
+    /* Radius */
+    --border-radius: 20px; /* More rounded edges */
+    --btn-radius: 50px;    /* Pill shaped buttons */
+}
+
+/* Base Styles */
+body {
+    background-color: var(--color-3);
+    color: var(--color-text);
+}
+
+/* Soft Backgrounds for sections */
+.s-intro, .s-cta, .s-testimonials {
+    background: var(--gradient-soft) !important;
+}
+
+/* Rounded Edges for common elements */
+.admin-card, .blog-card, .testimonials__slide, .list-items__item, .featured-image img, .page-media img {
+    border-radius: var(--border-radius) !important;
+    border: 1px solid rgba(255, 192, 203, 0.3) !important;
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.1) !important;
+    overflow: hidden;
+}
+
+/* Button Restyling */
+.btn, button, input[type="submit"] {
+    border-radius: var(--btn-radius) !important;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn--primary, input[type="submit"] {
+    background: var(--gradient-pink) !important;
+    border: none !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 15px rgba(255, 192, 203, 0.4) !important;
+}
+
+.btn--primary:hover, input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 192, 203, 0.6) !important;
+    background: var(--color-1-dark) !important;
+}
+
+.btn--stroke {
+    border: 2px solid var(--color-1) !important;
+    color: var(--color-1) !important;
+    background: transparent !important;
+}
+
+.btn--stroke:hover {
+    background: var(--color-1) !important;
+    color: #ffffff !important;
+}
+
+/* Header & Nav */
+.s-header {
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(10px);
+}
+
+.s-header__menu-links li a {
+    color: var(--color-2) !important;
+}
+
+.s-header__menu-links li.current a {
+    color: var(--color-1) !important;
+}
+
+/* Typography Colors */
+h1, h2, h3, h4, h5, h6, .display-1, .display-2 {
+    color: var(--color-2) !important;
+}
+
+.text-pretitle {
+    color: var(--color-1-dark) !important;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+}
+
+/* Admin Sidebar Overrides */
+.admin-sidebar {
+    background: #FFD1DC !important; /* Soft Baby Pink */
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.admin-nav-item a {
+    color: #555555 !important; /* Slightly darker grey for readability */
+    font-weight: 500 !important; /* Medium weight */
+}
+
+.admin-nav-item.active a, .admin-nav-item a:hover {
+    color: #ffffff !important;
+    background: #F4C2C2 !important; /* Slightly darker pink */
+    border-radius: 12px;
+}
+
+/* Main Background & Typography */
+.admin-main {
+    background-color: #FFF5F6 !important; /* Off-white/very light pink */
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.admin-header h2 {
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 700 !important;
+    color: #333333 !important;
+}
+
+.admin-header .text-pretitle {
+    color: #666666 !important; /* Soft grey for welcome text */
+    font-weight: 400 !important;
+    letter-spacing: normal !important;
+}
+
+/* Cards & Panels */
+.admin-card {
+    background: #ffffff !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.2) !important;
+    border: 1px solid rgba(255, 192, 203, 0.2) !important;
+}
+
+.admin-card h3 {
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 600 !important;
+}
+
+/* Form Labels & Inputs */
+.form-field label {
+    color: #A66B77 !important; /* Darker dusty rose */
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    margin-bottom: 0.8rem !important;
+    display: block;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    color: #2D2D2D !important; /* Dark Grey */
+    font-size: 1.4rem !important; /* 14px */
+    border-radius: 12px !important;
+    border: 1px solid #FFD1DC !important;
+    padding: 1.5rem 2rem !important;
+    background: #ffffff !important;
+    transition: all 0.3s ease;
+}
+
+/* Buttons */
+.btn--primary, .admin-btn-sm.btn--primary {
+    background: #F4C2C2 !important;
+    color: #ffffff !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-weight: 600 !important;
+}
+
+.btn--primary:hover {
+    background: #FFB6C1 !important;
+}
+
+/* Tables */
+.admin-table th {
+    background-color: #FFF5F6 !important;
+    color: #333333 !important;
+    border-bottom: 2px solid #FFD1DC !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-weight: 600 !important;
+    text-transform: capitalize !important; /* Actions instead of ACTIONS */
+}
+
+.admin-table td {
+    color: #4A4A4A !important;
+    font-size: 1.4rem !important;
+    vertical-align: middle !important;
+}
+
+/* Actions Column & Buttons */
+.admin-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.btn-admin-edit, .btn-admin-delete {
+    padding: 6px 14px !important;
+    border-radius: 8px !important;
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+    display: inline-block !important;
+    line-height: 1 !important;
+    text-transform: none !important;
+    border: 1px solid transparent !important;
+}
+
+.btn-admin-edit {
+    background-color: #F4C2C2 !important;
+    color: #8E5D67 !important;
+}
+
+.btn-admin-edit:hover {
+    background-color: #f0b1b1 !important;
+    transform: translateY(-1px);
+}
+
+.btn-admin-delete {
+    color: #E57373 !important;
+    background-color: transparent !important;
+    border: 1px solid #FFD1DC !important;
+}
+
+.btn-admin-delete:hover {
+    background-color: #FFF5F6 !important;
+    color: #d32f2f !important;
+    border-color: #E57373 !important;
+}
+
+.admin-table td:last-child {
+    text-align: center;
+}
+
+/* Overrides for About Section */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    border-radius: 12px !important;
+    border: 1px solid #FFD1DC !important; /* Subtle soft pink border */
+    padding: 1.5rem 2rem !important;
+    background: #ffffff !important;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #FFB6C1 !important;
+    box-shadow: 0 0 0 4px rgba(255, 182, 193, 0.2) !important;
+}
+
+/* Contact Button Specifics */
+.ss-contact input[type="submit"] {
+    background: linear-gradient(135deg, #FFD1DC 0%, #FFB6C1 100%) !important;
+    color: #ffffff !important;
+    font-weight: bold !important;
+    border: none !important;
+    box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3) !important;
+}
+
+.ss-contact input[type="submit"]:hover {
+    transform: translateY(-3px) !important; /* Lifting effect */
+    box-shadow: 0 8px 20px rgba(255, 182, 193, 0.5) !important;
+}
+
+/* Overrides for About Section */
+.ss-about {
+    background-color: #FFF5F6 !important; /* Soft, light baby pink background */
+}
+
+/* Hero Section Refinements */
+.s-intro__content-title {
+    font-size: clamp(4.5rem, 6vw, 9.6rem) !important; /* Slightly reduced font size */
+    line-height: 1.2 !important; /* Increased line-height for better breathing room */
+    color: #333333 !important; /* Dark charcoal for contrast */
+}
+
+.s-intro__content-text {
+    padding-right: 5rem !important; /* Add space between text and image */
+}
+
+.s-intro__content-pretitle {
+    transform: none !important; /* Remove negative translation for perfect alignment */
+    padding-left: 9rem !important; /* Adjust padding to make room for the line */
+    color: #F4C2C2 !important; /* Accent pink */
+}
+
+.s-intro__content-pretitle::before {
+    background-color: #F4C2C2 !important; /* Match line color to pretitle */
+}
+
+/* Overrides for Services Section */
+.ss-services {
+    background-color: #FFF5F6 !important; /* Soft, light baby pink background */
+}
+
+.ss-services .s-pageheader {
+    background-color: #FFF5F6 !important;
+}
+
+/* Accent numbering for services */
+.list-items__item-header::before {
+    color: #F4C2C2 !important;
+}
+
+/* Accent for icons if any */
+.list-items__item-header svg {
+    fill: #F4C2C2 !important;
+}
+
+/* Overrides for Contact Section */
+.ss-contact {
+    background-color: #FFF5F6 !important; /* Soft, light baby pink background */
+}
+
+.ss-contact .s-pageheader {
+    background-color: #FFF5F6 !important;
+}
+
+.ss-about h1, .ss-about h2, .ss-about h3,
+.ss-services h1, .ss-services h2, .ss-services h3,
+.ss-contact h1, .ss-contact h2, .ss-contact h3,
+.ss-contact .lead {
+    color: #333333 !important; /* Dark charcoal headings and lead text */
+}
+
+.ss-about .text-pretitle,
+.ss-services .text-pretitle,
+.ss-contact .text-pretitle {
+    color: #F4C2C2 !important; /* Deeper pastel pink accent label */
+}
+
+/* Remove dark grid lines and replace with clean space/subtle pattern */
+.grid-block, .list-items__item, .testimonials__slide {
+    border: none !important;
+    background: transparent !important;
+}
+
+/* Skill Tags */
+.skill-tag {
+    background: #FFD1DC !important;
+    color: #333333;
+    padding: 0.6rem 1.6rem;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: #F4C2C2 !important;
+    transform: scale(1.05);
+}
+
+/* Overrides for Blog Section */
+.ss-blog {
+    background-color: #FFF5F6 !important; /* Soft, light baby pink background */
+}
+
+.ss-blog .s-pageheader {
+    background-color: #FFF5F6 !important;
+}
+
+.ss-blog h1, .ss-blog h2, .ss-blog .blog-card__title a {
+    color: #333333 !important; /* Dark charcoal */
+}
+
+.ss-blog .text-pretitle {
+    color: #F4C2C2 !important; /* Accent pink */
+}
+
+.blog-card {
+    background: #ffffff !important;
+    border: 1px solid rgba(255, 192, 203, 0.3) !important;
+    box-shadow: 0 10px 20px rgba(255, 182, 193, 0.1) !important;
+    transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+    box-shadow: 0 15px 30px rgba(255, 182, 193, 0.2) !important;
+    transform: translateY(-5px);
+}
+
+.blog-card__title a:hover {
+    color: #FFB6C1 !important; /* Baby Pink Hover */
+}
+
+/* Pagination Styling */
+.pagination a, .pagination span {
+    border-radius: 50% !important;
+    border-color: #F4C2C2 !important;
+    color: #333333 !important;
+}
+
+.pagination .active span {
+    background: #F4C2C2 !important;
+    color: #ffffff !important;
+}
+
+/* Button overrides for About */
+.ss-about .btn--stroke {
+    border: 2px solid #F4C2C2 !important;
+    color: #F4C2C2 !important;
+}
+
+.ss-about .btn--stroke:hover {
+    background: #F4C2C2 !important;
+    color: #ffffff !important;
+}
