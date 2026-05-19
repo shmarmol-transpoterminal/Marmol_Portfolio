@@ -24,33 +24,29 @@
                 <h2 class="text-display-title">{{ $settings['contact_page_intro_title'] ?? "Let's take your business to the next level." }}</h2>
             </div>
             <div class="column xl-6 lg-12 u-flexitem-x-right">
-                <p class="lead">
-                {{ $settings['contact_page_intro_text'] ?? 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias eos quas blanditiis, quos sint nostrum fugit aperiam inventore optio itaque molestias corporis.' }}
-                </p>
-            </div>                       
-        </div> <!-- pageintro -->   
-        
-        <div class="row pagemedia">
-            <div class="column xl-12">
-                <figure class="page-media">                                
-                    <img src="{{ asset('assets/images/thumbs/contact/contact-1200.jpg') }}" 
-                         srcset="{{ asset('assets/images/thumbs/contact/contact-2400.jpg') }} 2400w, 
-                                 {{ asset('assets/images/thumbs/contact/contact-1200.jpg') }} 1200w, 
-                                 {{ asset('assets/images/thumbs/contact/contact-600.jpg') }} 600w" sizes="(max-width: 2400px) 100vw, 2400px" alt="">
-                </figure>
+               <p class="lead">
+               {{ $settings['contact_page_intro_text'] ?? 'I am currently open to new projects, freelance collaborations, or full-time opportunities. If you have a vision you want to bring to life through interactive design, feel free to reach out!' }}
+               </p>
             </div>
-        </div> <!-- pagemedia --> 
+            </div> <!-- pageintro -->   
 
-        <div class="row width-narrower pagemain">
+            <div class="row pagemedia">
             <div class="column xl-12">
-                <h2>Let's Work Together</h2>
+               <figure class="page-media">                                
+                   <img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t39.30808-6/626010574_2793697690962385_5789464887881614912_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGf_p8iSPHkSy3tdXu7ksE9w2Ky163TxofDYrLXrdPGh9YpOMKv1iHGz2GDcjtGqkGE7cR-YxlfJS2HruVzMhs6&_nc_ohc=eDDEQREx_HgQ7kNvwFkhkHm&_nc_oc=AdrZlZtCm1_oVH8HXCaC9fPYx6hfTSAWHZPmkW8rWLSXWtYQsXruEhVvd8_xAzpjAEY&_nc_zt=23&_nc_ht=scontent.fmnl3-2.fna&_nc_gid=e7OHUb-VjBySP1u4kpDniQ&_nc_ss=7b2a8&oh=00_Af5N42H_E_4NG9-taRioFUCBlO6hwips3RQaHA38M92ulA&oe=6A1207F0" alt="Shiela Mae">
+               </figure>
+            </div>
+            </div> <!-- pagemedia --> 
 
-                <div class="row">
-                    <div class="column xl-6 md-12 contact-cta">     
-                        <p>
-                        {{ $settings['contact_cta_text'] ?? 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quisquam voluptatibus debitis aperiam ratione.' }}
-                        </p>
+            <div class="row width-narrower pagemain">
+            <div class="column xl-12">
+               <h2>Let's Work Together</h2>
 
+               <div class="row">
+                   <div class="column xl-6 md-12 contact-cta">     
+                       <p>
+                       {{ $settings['contact_cta_text'] ?? 'I am always looking for new challenges and exciting projects to collaborate on. Whether you are looking to build a high-fidelity prototype from scratch, or just want to chat about design technology, my inbox is always open.' }}
+                       </p>
                         @if(session('success'))
                             <div style="background: #d4edda; color: #155724; padding: 15px; margin-bottom: 20px;">
                                 {{ session('success') }}

@@ -25,11 +25,10 @@
                 <h2 class="text-display-title">{{ $settings['services_page_intro_title'] ?? 'High-impact services to help your business' }}</h2>
             </div>
             <div class="column xl-6 lg-12 u-flexitem-x-right">
-                <p class="lead">
-                {{ $settings['services_page_intro_text'] ?? 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias eos quas blanditiis, quos sint nostrum fugit aperiam inventore optio itaque molestias corporis.' }}
-                </p>
-            </div>                       
-        </div>  <!-- pageintro -->       
+               <p class="lead">
+               {{ $settings['services_page_intro_text'] ?? 'I provide specialized prototyping services that bridge the gap between design and development, ensuring a smooth and efficient product lifecycle.' }}
+               </p>
+            </div>        </div>  <!-- pageintro -->       
 
         <div class="row">
             <div class="column xl-12 grid-block">             
